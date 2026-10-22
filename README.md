@@ -5,9 +5,6 @@ A 6-DOF robot arm replays brushing-like trajectories while a *virtual IMU* (with
 
 No hardware needed. One command to run everything.
 
-![Calibration effect across 12 fault scenarios](![<img width="1920" height="1109" alt="project_schema" src="https://github.com/user-attachments/assets/f4fcf66d-86cc-4639-a701-2ff4edc54419" />
-]()
-)
 
 ## Why this exists
 
