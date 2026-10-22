@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imulab"
+version = "0.1.0"
+description = "Simulated robot-arm replay with a virtual IMU and ground-truth tracker, plus validation, fusion and diagnostics tooling"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.35", "plotly>=5.20", "pandas>=2.0"]
+pybullet = ["pybullet>=3.2.5"]
+dev = ["pytest>=8", "streamlit>=1.35", "plotly>=5.20", "pandas>=2.0"]
+
+[project.scripts]
+imulab = "imulab.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
